@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index, name='index'),
     path('Adduser/', views.adduser, name='adduser'),
+    path('insertuser/', views.insertuser, name='insertuser')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

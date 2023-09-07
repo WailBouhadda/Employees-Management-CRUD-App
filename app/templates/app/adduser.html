@@ -13,19 +13,19 @@
         Add new Employee
       </div>
       <div class="card-body">
-        <form name="register" method="post" action="insertuser">
+        <form name="register" method="post" action="/insertuser/">
             {% csrf_token %}
           <div class="form-group mb-3">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname"  placeholder="Enter first name">
+            <input type="text" class="form-control" name="firstname" id="firstname"  placeholder="Enter first name">
           </div>
           <div class="form-group mb-3">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname"  placeholder="Enter last name">
+            <input type="text" class="form-control" name="lastname" id="lastname"  placeholder="Enter last name">
           </div>
           <div class="form-group mb-3">
             <label for="phone">Phone</label>
-            <input type="text" class="form-control" id="phone"  placeholder="Enter phone">
+            <input type="text" class="form-control" name="phone" id="phone"  placeholder="Enter phone">
           </div>
           <input type="submit" name="reg" class="btn btn-primary"/>
         </form>
