@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body >
+    <div class="card w-50 m-auto mt-5">
+      <div class="card-header">
+        Add new Employee
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group mb-3">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstname"  placeholder="Enter first name">
+          </div>
+          <div class="form-group mb-3">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname"  placeholder="Enter last name">
+          </div>
+          <div class="form-group mb-3">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone"  placeholder="Enter phone">
+          </div>
+          <button type="submit" class="btn btn-primary">ADD</button>
+        </form>
+      </div>
+    </div>
+
+</body>
+</html>
